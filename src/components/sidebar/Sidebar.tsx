@@ -37,7 +37,9 @@ function Sidebar() {
           </div>
 
           <div className='sidebarFooter'>
-            <img src="" alt="" />
+            <div className="sidebarAccount">
+              <img src="" alt="" />
+            </div>
           </div>
         </div>
       </div>
