@@ -2,6 +2,9 @@ import React from 'react'
 import './Sidebar.scss'
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import AddIcon from '@mui/icons-material/Add';
+import MicIcon from '@mui/icons-material/Mic';
+import HeadphonesIcon from '@mui/icons-material/Headphones';
+import SettingsIcon from '@mui/icons-material/Settings';
 import { SidebarChannel } from './SidebarChannel.tsx';
 
 function Sidebar() {
@@ -36,9 +39,19 @@ function Sidebar() {
             <SidebarChannel />
           </div>
 
-          <div className='sidebarFooter'>
+          <div className="sidebarFooter">
             <div className="sidebarAccount">
-              <img src="" alt="" />
+              <img src="./icon.png" alt="" />
+              <div className="accountName">
+                <h4>Hitomi</h4>
+                <span>#0621</span>
+              </div>
+            </div>
+
+            <div className="sidebarvoice">
+              <MicIcon />
+              <HeadphonesIcon />
+              <SettingsIcon />
             </div>
           </div>
         </div>
