@@ -2,7 +2,6 @@
     display: flex;
     flex: 0.35;
     height: 100vh;
-    background-color: #33363d;
 
     .sidebarLeft {
         display: flex;
@@ -33,6 +32,8 @@
     .sidebarRight {
         width: 300px;
         background-color: #2b2d33;
+        position: relative;
+        flex-grow: 1;
 
         .sidebarTop {
             color: #fff;
@@ -41,25 +42,66 @@
             justify-content: space-between;
             padding: 20px;
         }
-    }
 
-    .sidebarChannels {
-        padding: 13px;
+        .sidebarChannels {
+            padding: 13px;
+    
+            .sideberChannelsHeader {
+                color: #fff;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 5px;
+            }
+    
+            .sidebarHeader {
+                display: flex;
+            }
+    
+            .sidebarAddIcon {
+                cursor: pointer;
+            }
+        }
 
-        .sideberChannelsHeader {
-            color: #fff;
+        .sidebarFooter {
+            position: absolute;
+            bottom: 0;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-top: 5px;
+            width: 93%;
+            padding-bottom: 10px;
+            padding-top: 10px;
+            border-top: 1px solid #686a6e;
+            margin-left: -3px;
         }
 
-        .sidebarHeader {
+        .sidebarAccount {
             display: flex;
+            align-items: center;
+
+            img {
+                width: 60px;
+            }
+
+            .accountName {
+                margin-left: 5px;
+            }
+
+            h4 {
+                color: #fff;
+                font-weight: 500;
+            }
+
+            span {
+                color: #686a6e;
+            }
         }
 
-        .sidebarAddIcon {
-            cursor: pointer;
+        .sidebarvoice {
+            display: flex;
+            align-items: center;
+            color: #686a6e;
         }
     }
 }
